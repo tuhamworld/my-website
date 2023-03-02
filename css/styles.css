@@ -1,0 +1,849 @@
+/*  Resetting the page */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Importing Custom fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+
+
+
+/* General Settings*/
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Source Sans Pro';
+
+}
+
+.boxed-layout {
+    margin: 0px 10rem;
+}
+
+
+/* Navigation starts here */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0.9rem;
+}
+
+#logo>img {
+    width: 50%;
+    margin: 1rem;
+}
+
+nav>ul {
+    display: flex;
+
+}
+
+nav>ul>li {
+    margin: 1rem;
+    list-style-type: none;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+nav>ul>li>a:active {
+    color: #4C34FB;
+}
+
+nav>ul>li>a:hover {
+    color: #4C34FB;
+    text-decoration: underline;
+    text-decoration-style: double;
+    font-size: 1.4rem;
+}
+
+/*  Navigation ends here */
+
+
+/* Hero Section Starts here */
+.big-container {
+    background-color: #f9f9ff;
+    padding: 5rem 0rem;
+    margin: 0rem 0rem 5rem 0rem;
+
+}
+
+#small-container {
+    display: flex;
+    justify-items: center;
+    margin: 0rem 6rem;
+}
+
+#small-container>#hero-left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#hero-left-column>h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#hero-left-column>h2 {
+    font-size: 2rem;
+    margin: 1.5rem 0rem;
+}
+
+#hero-right-column>img {
+    margin-left: 3rem;
+    filter: grayscale(100%);
+}
+
+#hero-right-column>img:hover {
+    filter: none;
+}
+
+.button {
+    margin: 1.5rem 0rem;
+    text-decoration: none;
+    background-color: #3B4D7B;
+    padding: 0.9rem 1.2rem;
+    width: 30%;
+    font-weight: bold;
+    color: #fff;
+    /* opacity: 80%; */
+    text-align: center;
+
+}
+
+
+
+.button:hover {
+    font-size: 1.2rem;
+    opacity: 100%;
+    /* border-radius: 1rem; */
+
+}
+
+
+
+#hero-right-column>img {
+    width: 512px;
+    height: 512px;
+}
+
+/* Hero Section Ends here */
+
+/* HEADER STYLE ENDS HERE  */
+
+
+
+
+/* MAIN SECTION STARTS HERE */
+
+
+
+/* About Section Styles Starts here */
+section#about img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: double #4C34FB;
+    margin-right: 4rem;
+}
+
+section#about img:hover {
+    width: 320px;
+    height: 320px;
+    border-width: 0.6rem;
+
+}
+
+.about-section {
+    display: flex;
+}
+
+#hero-right-second-column {
+    margin-top: 2rem;
+
+}
+
+#hero-right-second-column>#about-me {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#hero-right-second-column>h2 {
+    text-transform: uppercase;
+    margin: 1.5rem 0rem;
+}
+
+#hero-right-second-column>p {
+    margin-bottom: 2.5rem;
+}
+
+/* About Section Styles Ends here */
+
+
+
+/* Services Section Styles Starts Here */
+
+section#services>h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+
+}
+
+section#services>p {
+    text-align: center;
+    margin: 1rem 0rem;
+    font-size: 0.9rem;
+}
+
+#services-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+}
+
+.individual-service {
+    margin-right: 3rem;
+    text-align: center;
+}
+
+
+#services-list>#first-3 {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+#services-list .service-title {
+    margin: 1.5rem 0rem;
+}
+
+
+
+#services-list>#last-3 {
+    display: flex;
+}
+
+
+/* Services Section Styles Ends here */
+
+
+
+/*  Counter Section Styles Starts here */
+
+section#blue-counter {
+    margin: 3rem 0rem;
+    padding: 7rem 0rem;
+    background-image: linear-gradient(to right, #3B4D7B, #3C4E8E, #6574aa, #65b9fc);
+    color: #fff;
+}
+
+section#blue-counter>#counter-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+section#blue-counter>#counter-container h4 {
+    font-size: 2rem;
+}
+
+section#blue-counter>#counter-container {
+    margin: 0rem;
+}
+
+/*  Counter Section Styles Ends here */
+
+
+/*  Featured Project Styles Starts here */
+
+section#portfolio {
+    margin: 8rem 0rem;
+}
+
+
+
+section#portfolio>#featured-title {
+    text-align: center;
+    margin-bottom: 7rem;
+
+}
+
+section#portfolio>#featured-title>h3 {
+    font-size: 1.8rem;
+}
+
+#project-gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+#project-gallery>#first-3-project {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 5rem;
+}
+
+#project-gallery>#last-3-project {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-image {
+    width: 370px;
+    height: 250px;
+    margin: 0.5rem;
+}
+
+.project-image:hover {
+    width: 380px;
+    height: 300px;
+    opacity: 80%;
+    box-shadow: 10px 20px 1rem #000;
+}
+
+/*  Featured Project Styles Ends here */
+
+
+/*  Feedback Section Style Starts here */
+
+section#feedback {
+    background-color: #f9f9ff;
+    padding: 5rem 0rem;
+    margin-bottom: 4rem;
+}
+
+#client-feedback {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#client-feedback>h3 {
+    font-size: 1.8rem;
+}
+
+#testimonials {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.single-testimonial>img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    float: left;
+    margin: 1rem;
+}
+
+.single-testimonial>img:hover {
+    width: 100px;
+    height: 100px;
+}
+
+.single-testimonial>h5 {
+    margin: 0.7rem 0rem;
+}
+
+/*  Feedback Section Style Ends here */
+
+
+
+
+/* Latest Posts on Blog Style Starts here */
+
+section#blog {
+    margin-bottom: 0rem;
+}
+
+section#blog>#latest-posts {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+section#blog>#latest-posts>h3 {
+    font-size: 1.8rem;
+}
+
+section#blog #blog-carousel {
+    display: flex;
+}
+
+
+.single-carousel {
+    margin-right: 2rem;
+}
+
+.single-carousel>img {
+    /* width: 350px; */
+    height: 200px;
+
+}
+
+.single-carousel>img:hover {
+    /* width: 360px; */
+    height: 210px;
+}
+
+.meta {
+    display: flex;
+    align-content: center;
+    margin: 0.5rem 0rem;
+
+}
+
+.meta>img {
+    width: 30px;
+    height: 30px;
+}
+
+.post-title {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+/* Latest Posts on Blog Style Ends here */
+
+
+/* Client Logo Styles Starts here */
+
+section#client-logo {
+    /* margin: 2rem 0rem; */
+    padding: 4rem 0rem;
+    background-image: linear-gradient(to right, #3B4D7B, #3C4E8E, #6574aa, #65b9fc);
+    color: #fff;
+}
+
+
+section#client-logo #all-logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+section#client-logo #all-logos>img {
+    width: 100px;
+}
+
+section#client-logo #all-logos>img:hover {
+    box-shadow: 5px 5px 35px #f9f9ff;
+    border-radius: 50%;
+}
+
+/* Client Logo Styles Ends here */
+
+
+/* MAIN SECTION STYLES ENDS HERE */
+
+
+
+/* FOOTER SECTION STYLE STARTS HERE */
+
+section#footer {
+    background-color: #04091e;
+    padding: 5rem 0rem;
+}
+
+#footer-body {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+/*  About Me Column Style Starts here */
+
+
+
+#about-me-footer>#about-title {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#about-me-footer p {
+    color: #8b8e9b;
+    margin: 0rem 2rem;
+}
+
+#about-me-footer p>a {
+    text-decoration: none;
+}
+
+#about-me-footer p>a:hover {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-style: double;
+    letter-spacing: 0.2rem;
+}
+
+/*  About Me Column Style Ends here */
+
+
+
+/*  Newsletter Column Style Starts here */
+
+#newsletter>#newsletter-title {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#newsletter p {
+    color: #8b8e9b;
+    margin: 1rem 0rem;
+}
+
+/*  Form input style starts here */
+
+input[type="email"] {
+    padding: 0.5rem 7rem 0.5rem 0.3rem;
+}
+
+
+#submit-btn {
+    padding: 0.5rem;
+    background-color: #8490ff;
+    color: #fff;
+    margin-left: -0.8rem;
+    border: solid #fff 1px;
+}
+
+#submit-btn:hover {
+    padding: 0.9rem;
+}
+
+/*  Form input style ends here */
+
+/*  Newsletter Column Style Ends here */
+
+
+/* Follow Social Profile Styles starts here */
+#follow-me>h4 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#follow-me>p {
+    color: #8b8e9b;
+    margin: 1.3rem 0rem;
+}
+
+#follow-me>#social-icons {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+#follow-me>#social-icons>a {
+    color: #fff;
+}
+
+#follow-me>#social-icons>a:hover {
+    background-color: #fff;
+    color: gray;
+    padding: 0.5rem 0.7rem;
+    border-radius: 50%;
+}
+
+/* Follow Social Profile Styles starts here */
+
+/* FOOTER SECTION STYLE ENDS HERE */
+
+
+
+/* ------------------------------ */
+
+
+/* Media Queries Styles Starts here */
+
+@media(min-width: 320px) and (max-width: 768px) {
+
+
+    /*  General Settings */
+
+    .boxed-layout {
+        margin: 0px 0.8rem;
+    }
+
+    /*  Button styles */
+    .button {
+        width: 90%;
+    }
+
+    /*  Navigation styles */
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav>ul {
+        flex-direction: column;
+    }
+
+    nav>ul>li>a {
+        font-size: 1rem;
+    }
+
+
+    #small-container {
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    /*  Hero image on first header */
+    #hero-right-column>img {
+        width: 300px;
+        height: 300px;
+    }
+
+    /*  Hero image on about section */
+    #hero-left-column>img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /*  About style settings */
+    #hero-right-second-column {
+        text-align: center;
+    }
+
+    section#about img {
+        width: 200px;
+        height: 200px;
+        margin-left: 4rem;
+    }
+
+    .about-section {
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    /* Services Style Settings */
+
+    #services-list {
+        margin: 1rem 0rem;
+    }
+
+
+    #services-list>#first-3,
+    #last-3 {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .individual-service {
+        margin-bottom: 3rem;
+        margin-right: 0rem;
+        border: solid gray 0.2rem;
+        padding: 2rem;
+    }
+
+
+    /* Counter Styles Start here */
+    #counter-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #counter-container>.counter {
+        margin: 1rem 0rem;
+    }
+
+    /*  Portfolio Styles start here */
+
+    section#portfolio {
+        margin: 2rem 0rem;
+    }
+
+
+    section#portfolio>#featured-title {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    section#portfolio>#featured-title>h3 {
+        font-size: 1.4rem;
+    }
+
+    section#portfolio>#featured-title>p {
+        font-size: 0.9rem;
+    }
+
+    #project-gallery {
+        flex-direction: column;
+        align-items: center;
+        margin: 0rem 0rem;
+        /* align-items: center; */
+    }
+
+    #project-gallery>#first-3-project {
+        margin: 0rem 0rem;
+    }
+
+    #project-gallery>#first-3-project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #last-3-project {
+        flex-direction: column;
+
+    }
+
+    #project-gallery>#first-3-project>img {
+        width: 250px;
+        height: 150px;
+
+    }
+
+    #last-3-project>img {
+        width: 250px;
+        height: 150px;
+
+    }
+
+    /*  Testimonial Styles Starts here */
+
+    #client-feedback>h3 {
+        font-size: 1.5rem
+    }
+
+    #client-feedback>p {
+        font-size: 0.8rem;
+    }
+
+    #testimonials {
+        margin: 0rem 0rem;
+        text-align: center;
+    }
+
+    /*  Latest Posts from Blog */
+
+    section#blog>#latest-posts>h3 {
+        font-size: 1.5rem;
+    }
+
+    section#blog>#latest-posts>p {
+        font-size: 0.9rem;
+        margin: 0.7rem 0rem;
+    }
+
+    section#blog #blog-carousel {
+        flex-direction: column;
+        margin: 0rem 0.5rem;
+    }
+
+    .single-carousel {
+        margin: 2rem 0.9rem;
+    }
+
+    .meta {
+        margin: 0rem 2rem;
+    }
+
+    .post-title {
+        margin: 0rem 2rem;
+    }
+
+    .post-title~p {
+        margin: 1rem 2rem;
+
+
+    }
+
+
+
+
+    /*  Client logo */
+
+    #all-logos {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    /*  Feedback */
+
+    #testimonials {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .single-testimonial>img {
+        float: none;
+    }
+
+    .single-testimonial {
+        margin-bottom: 3rem;
+    }
+
+
+    /*  Footer styles */
+    #footer-body {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0rem 0rem;
+    }
+
+    #about-me-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0rem;
+    }
+
+    #about-title~p {
+        color: #fff;
+    }
+
+    #newsletter {
+        margin: 2rem 0rem;
+        text-align: center;
+        /* justify-content: space-around; */
+    }
+
+    #follow-me {
+        align-items: center;
+    }
+
+    input[type="email"] {
+        padding: 0.5rem 8rem 0.5rem 0.3rem;
+    }
+
+    #submit-btn {
+        padding: 0.5rem;
+        background-color: #8490ff;
+        color: #fff;
+        margin-left: -2.2rem;
+        border: solid #fff 1px;
+    }
+
+}
