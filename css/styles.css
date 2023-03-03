@@ -210,6 +210,10 @@ section#about img:hover {
 
 /* Services Section Styles Starts Here */
 
+.service-icon:hover {
+    filter: grayscale();
+}
+
 section#services>h3 {
     text-align: center;
     font-size: 1.5rem;
