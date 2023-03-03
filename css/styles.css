@@ -659,7 +659,7 @@ input[type="email"] {
     .individual-service {
         margin-bottom: 3rem;
         margin-right: 0rem;
-        border: solid gray 0.2rem;
+        /* border: solid gray 2rem; */
         padding: 2rem;
     }
 
