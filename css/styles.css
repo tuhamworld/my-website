@@ -855,26 +855,31 @@ hr {
         text-decoration: underline;
     }
 
-    #newsletter {
-        margin: 2rem 0rem;
-        text-align: center;
-        /* justify-content: space-around; */
-    }
+    /* #newsletter { */
+    /* margin: 2rem 0rem;
+        text-align: center; */
+    /* justify-content: space-around; */
+    /* } */
 
     #follow-me {
         align-items: center;
     }
 
-    input[type="email"] {
+    /* input[type="email"] {
         padding: 0.5rem 8rem 0.5rem 0.3rem;
-    }
+    } */
 
-    #submit-btn {
+    /* #submit-btn {
         padding: 0.5rem;
         background-color: #8490ff;
         color: #fff;
         margin-left: -2.2rem;
         border: solid #fff 1px;
-    }
+    } */
+
+
+
 
 }
+
+/* Media Queries Styles Ends here */
