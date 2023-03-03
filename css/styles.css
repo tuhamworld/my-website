@@ -15,8 +15,6 @@
 
 /* General Settings*/
 
-
-
 html {
     scroll-behavior: smooth;
 }
@@ -30,6 +28,17 @@ body {
 .boxed-layout {
     margin: 0px 10rem;
 }
+
+
+/*  Mailchimp Import Styles */
+
+#mc_embed_signup {
+    background: rgba(83, 48, 48, 0);
+    clear: left;
+    font-size: 14px;
+    font-family: 'Source Sans Pro';
+}
+
 
 
 /* Navigation starts here */
@@ -481,19 +490,18 @@ section#footer {
 
 #about-me-footer p {
     color: #8b8e9b;
-    margin: 0rem 2rem;
+    width: 400px;
 }
 
 #about-me-footer p>a {
     text-decoration: none;
+    color: #fff;
 }
 
 #about-me-footer p>a:hover {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #fff;
     text-decoration: underline;
-    text-decoration-style: double;
-    letter-spacing: 0.2rem;
 }
 
 /*  About Me Column Style Ends here */
@@ -563,6 +571,18 @@ input[type="email"] {
     color: gray;
     padding: 0.5rem 0.7rem;
     border-radius: 50%;
+}
+
+hr {
+    margin-top: 1rem;
+}
+
+#copyright {
+    color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: -4rem;
+    font-size: 0.7rem;
 }
 
 /* Follow Social Profile Styles starts here */
@@ -818,10 +838,17 @@ input[type="email"] {
         flex-direction: column;
         align-items: center;
         margin: 1rem 0rem;
+        padding: 1rem;
     }
 
     #about-title~p {
         color: #fff;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    #about-title~p>a {
+        text-decoration: underline;
     }
 
     #newsletter {
