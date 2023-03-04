@@ -195,6 +195,11 @@ section#about img:hover {
     font-weight: 300;
 }
 
+
+#hero-right-second-column a:hover {
+    font-size: 1.2rem;
+}
+
 #hero-right-second-column>h2 {
     text-transform: uppercase;
     margin: 1.5rem 0rem;
