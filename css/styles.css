@@ -412,7 +412,7 @@ section#blog #blog-carousel {
 }
 
 .single-carousel>img {
-    /* width: 350px; */
+    width: 350px;
     height: 200px;
 
 }
@@ -791,6 +791,11 @@ hr {
 
     .single-carousel {
         margin: 2rem 0.9rem;
+    }
+
+    .single-carousel>img {
+        width: 300px;
+        margin-bottom: 1rem;
     }
 
     .meta {
