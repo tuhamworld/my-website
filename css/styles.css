@@ -54,32 +54,36 @@ nav {
     margin: 1rem;
 }
 
-nav>ul {
+nav ul {
     display: flex;
 
 }
 
-nav>ul>li {
+nav ul li {
     margin: 1rem;
     list-style-type: none;
 }
 
-nav>ul>li>a {
+nav ul li a {
     text-decoration: none;
     color: #000;
     font-size: 1.2rem;
     text-transform: uppercase;
 }
 
-nav>ul>li>a:active {
+nav ul li a:active {
     color: #4C34FB;
 }
 
-nav>ul>li>a:hover {
+nav ul li a:hover {
     color: #4C34FB;
     text-decoration: underline;
     text-decoration-style: double;
     font-size: 1.4rem;
+}
+
+.menu-toggle-button {
+    display: none;
 }
 
 /*  Navigation ends here */
@@ -544,6 +548,16 @@ input[type="email"] {
     border: solid #fff 1px;
 }
 
+#mc-embedded-subscribe {
+    font-size: 0.7rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+#mc-embedded-subscribe:hover{
+    font-size: 0.8rem;
+}
+
 #submit-btn:hover {
     padding: 0.9rem;
 }
@@ -554,6 +568,16 @@ input[type="email"] {
 
 
 /* Follow Social Profile Styles starts here */
+
+#follow-me a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#follow-me a:hover {
+    font-size: 1.2rem;
+}
+
 #follow-me>h4 {
     color: #fff;
     font-size: 1.5rem;
@@ -603,6 +627,17 @@ hr {
 /* ------------------------------ */
 
 
+
+
+
+
+
+
+
+
+
+/* ---------------------------------- */
+
 /* Media Queries Styles Starts here */
 
 @media(min-width: 320px) and (max-width: 768px) {
@@ -627,13 +662,50 @@ hr {
         text-align: center;
     }
 
-    nav>ul {
+    nav ul {
         flex-direction: column;
     }
 
-    nav>ul>li>a {
+    nav ul li a {
         font-size: 1rem;
     }
+
+    /*  Mobile Menu Styles starts */
+
+
+#desktop-menu {
+    display: none;
+}
+
+.menu-toggle-button {
+    display: block;
+}
+
+.menu-btn{
+    font-size: 1.5rem;
+    background-color: #4C34FB;
+    color: #fff;
+    border: none;
+    padding: 1rem 4rem;
+    margin: 1rem 0rem;
+
+}
+
+    
+.menu-toggle-button:hover .menu-content {
+    display: block;
+}
+
+.menu-content {
+    display: none;
+}
+    
+    /*  Mobile Menu Styles ends */
+
+
+
+
+    /* Navigation Styles Ends */
 
 
     #small-container {
