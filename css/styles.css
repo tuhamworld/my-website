@@ -707,6 +707,9 @@ hr {
 
     /* Navigation Styles Ends */
 
+    .big-container {
+        padding: 2rem 0rem;
+    }
 
     #small-container {
         align-items: center;
@@ -714,10 +717,16 @@ hr {
 
     }
 
+    #hero-left-column>h3 {
+        text-align: center;
+    }
+
     /*  Hero image on first header */
     #hero-right-column>img {
         width: 300px;
         height: 300px;
+        margin-left: 0;
+        
     }
 
     /*  Hero image on about section */
@@ -863,15 +872,18 @@ hr {
 
     .single-carousel {
         margin: 2rem 0.9rem;
+        text-align: center;
     }
 
     .single-carousel>img {
         width: 300px;
         margin-bottom: 1rem;
+        
     }
 
     .meta {
-        margin: 0rem 2rem;
+        margin: auto 0;
+
     }
 
     .post-title {
