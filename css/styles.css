@@ -82,6 +82,18 @@ nav ul li a:hover {
     font-size: 1.4rem;
 }
 
+#date {
+    color: #D05452;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-bottom: solid 1px gray;
+    border-top: solid 1px gray;
+
+
+
+}
+
 .menu-toggle-button {
     display: none;
 }
