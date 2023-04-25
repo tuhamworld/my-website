@@ -287,7 +287,8 @@ section#services>p {
 section#blue-counter {
     margin: 3rem 0rem;
     padding: 7rem 0rem;
-    background-image: linear-gradient(to right, #3B4D7B, #3C4E8E, #6574aa, #65b9fc);
+    /* background-image: linear-gradient(to right, #3B4D7B, #3C4E8E, #6574aa, #65b9fc); */
+    background-color: #685473;
     color: #fff;
 }
 
@@ -464,7 +465,8 @@ section#blog #blog-carousel {
 section#client-logo {
     /* margin: 2rem 0rem; */
     padding: 4rem 0rem;
-    background-image: linear-gradient(to right, #3B4D7B, #3C4E8E, #6574aa, #65b9fc);
+    /* background-image: linear-gradient(to right, #3B4D7B, #3C4E8E, #6574aa, #65b9fc); */
+    background-color: #685473;
     color: #fff;
 }
 
