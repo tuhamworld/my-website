@@ -693,6 +693,11 @@ hr {
 @media(min-width: 320px) and (max-width: 768px) {
 
 
+    #desktop-menu {
+        display: none;
+    }
+
+
     /*  General Settings */
 
     .boxed-layout {

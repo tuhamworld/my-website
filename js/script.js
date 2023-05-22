@@ -1,3 +1,5 @@
+// Showing Time and Date on Website
+
 let paraDate = document.querySelector('#date')
 let today = new Date();
 let am = 'am'
@@ -13,6 +15,20 @@ if (hour < 12) {
 
 
 paraDate.textContent = 'Today\'s date is: ' + todayDate + ' | Time: ' + hour + ':' + minutes + am;
+
+
+// Navigation Menu
+const hamburger = document.querySelector('.menu-btn');
+const navLinks = document.querySelector('#desktop-menu"');
+const links = document.querySelectorAll('#desktop-menu" li');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    links.forEach(link => {
+        link.classList.toggle('fade')
+    });
+});
+
 
 // Newsletter Script  starts 
 (function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; }(jQuery)); var $mcj = jQuery.noConflict(true);
