@@ -3,19 +3,20 @@
 let paraDate = document.querySelector('#date')
 
 function showTime() {
+
     let today = new Date();
     let am = 'am';
     let hour = today.getHours();
     let minutes = today.getMinutes();
     let seconds = today.getSeconds();
     let todayDate = today.toDateString();
-    paraDate.textContent = 'Today\'s date is: ' + todayDate + ' | Time: ' + hour + ':' + minutes + ':' + seconds + am;
 
     if (hour < 12) {
         am = 'am'
     } else {
         am = 'pm'
     }
+    paraDate.textContent = 'Today\'s date is: ' + todayDate + ' | Time: ' + hour + ':' + minutes + ':' + seconds + am;
 
 }
 
