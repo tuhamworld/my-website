@@ -1,20 +1,27 @@
 // Showing Time and Date on Website
 
 let paraDate = document.querySelector('#date')
-let today = new Date();
-let am = 'am'
-let hour = today.getHours()
-let minutes = today.getMinutes()
-let todayDate = today.toDateString()
 
-if (hour < 12) {
-    am = 'am'
-} else {
-    am = 'pm'
+function showTime() {
+    let today = new Date();
+    let am = 'am';
+    let hour = today.getHours();
+    let minutes = today.getMinutes();
+    let seconds = today.getSeconds();
+    let todayDate = today.toDateString();
+    paraDate.textContent = 'Today\'s date is: ' + todayDate + ' | Time: ' + hour + ':' + minutes + ':' + seconds + am;
+
+    if (hour < 12) {
+        am = 'am'
+    } else {
+        am = 'pm'
+    }
+
 }
 
+setInterval(showTime, 1000);
 
-paraDate.textContent = 'Today\'s date is: ' + todayDate + ' | Time: ' + hour + ':' + minutes + am;
+
 
 
 // Navigation Menu
