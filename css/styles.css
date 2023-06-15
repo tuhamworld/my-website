@@ -125,6 +125,7 @@ nav ul li a:hover {
 #hero-left-column {
     animation: slideInFromLeft 1s ease-in;
 }
+
 #hero-left-column>h3 {
     font-size: 1.5rem;
     font-weight: 300;
@@ -141,11 +142,13 @@ nav ul li a:hover {
 
 #hero-right-column>img {
     margin-left: 3rem;
-    filter: grayscale(100%);
+    filter: none;
+
 }
 
 #hero-right-column>img:hover {
-    filter: none;
+
+    filter: grayscale(100%);
 }
 
 .button {
@@ -573,7 +576,7 @@ input[type="email"] {
     text-align: center;
 }
 
-#mc-embedded-subscribe:hover{
+#mc-embedded-subscribe:hover {
     font-size: 0.8rem;
 }
 
@@ -728,33 +731,33 @@ hr {
     /*  Mobile Menu Styles starts */
 
 
-#desktop-menu {
-    display: none;
-}
+    #desktop-menu {
+        display: none;
+    }
 
-.menu-toggle-button {
-    display: block;
-}
+    .menu-toggle-button {
+        display: block;
+    }
 
-.menu-btn{
-    font-size: 1.5rem;
-    background-color: #4C34FB;
-    color: #fff;
-    border: none;
-    padding: 1rem 4rem;
-    margin: 1rem 0rem;
+    .menu-btn {
+        font-size: 1.5rem;
+        background-color: #4C34FB;
+        color: #fff;
+        border: none;
+        padding: 1rem 4rem;
+        margin: 1rem 0rem;
 
-}
+    }
 
-    
-.menu-toggle-button:hover .menu-content {
-    display: block;
-}
 
-.menu-content {
-    display: none;
-}
-    
+    .menu-toggle-button:hover .menu-content {
+        display: block;
+    }
+
+    .menu-content {
+        display: none;
+    }
+
     /*  Mobile Menu Styles ends */
 
 
@@ -791,7 +794,7 @@ hr {
         width: 300px;
         height: 300px;
         margin-left: 0;
-        
+
     }
 
     /*  Hero image on about section */
@@ -943,7 +946,7 @@ hr {
     .single-carousel>img {
         width: 300px;
         margin-bottom: 1rem;
-        
+
     }
 
     .meta {
