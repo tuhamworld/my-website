@@ -29,7 +29,6 @@ body {
     margin: 0px 10rem;
 }
 
-
 /*  Mailchimp Import Styles */
 
 #mc_embed_signup {
@@ -337,12 +336,13 @@ section#portfolio>#featured-title>h3 {
 #project-gallery {
     display: flex;
     flex-direction: column;
+    /* flex-wrap: wrap; */
 }
 
-#project-gallery>#first-3-project {
+#project-gallery>.first-3-project {
     display: flex;
     justify-content: space-around;
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
 }
 
 #project-gallery>#last-3-project {
@@ -881,11 +881,11 @@ hr {
         /* align-items: center; */
     }
 
-    #project-gallery>#first-3-project {
+    #project-gallery>.first-3-project {
         margin: 0rem 0rem;
     }
 
-    #project-gallery>#first-3-project {
+    #project-gallery>.first-3-project {
         flex-direction: column;
         align-items: center;
     }
@@ -895,7 +895,7 @@ hr {
 
     }
 
-    #project-gallery>#first-3-project>img {
+    #project-gallery>.first-3-project>img {
         width: 250px;
         height: 150px;
 
