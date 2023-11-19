@@ -6,7 +6,8 @@ function showTime() {
 
     let today = new Date();
     let am = 'am';
-    let hour = today.getHours() % 12;
+    let hour = today.getHours();
+    let finalHour = hour % 12;
     let minutes = today.getMinutes();
     let seconds = today.getSeconds();
     let todayDate = today.toDateString();
@@ -17,13 +18,13 @@ function showTime() {
     } else if (hour >= 12 && hour < 17) {
         am = 'pm';
         timeOfDay = "afternoon";
-    } else {
+    } else if(hour > 17) {
         am = 'pm';
         timeOfDay = "night";
     }
     // paraDate.textContent = 'Good ' + timeOfDay + ` Today's date is: ${todayDate} | Time: ${hour}:${minutes}:${seconds}${am}
     //  `
-    paraDate.innerHTML = `Good ${timeOfDay}<br><br><strong>Today's date</strong> is: ${todayDate} | <strong>Time</strong>: ${hour}:${minutes}:${seconds}${am}`;
+    paraDate.innerHTML = `Good ${timeOfDay}<br><br><strong>Today's date</strong> is: ${todayDate} | <strong>Time</strong>: ${finalHour}:${minutes}:${seconds}${am}`;
     ;
     ;
 
