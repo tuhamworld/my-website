@@ -496,8 +496,60 @@ section#client-logo #all-logos>img:hover {
 /* Client Logo Styles Ends here */
 
 
-/* MAIN SECTION STYLES ENDS HERE */
 
+/* Contact Form starts here */
+section#contact-form {
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    background-color: #f9f9ff;
+    padding: 5rem 0rem;
+
+}
+
+section#contact-form .boxed-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#form-intro-text {
+    margin-bottom: 1rem;
+}
+
+.form-input {
+    margin: 0.5rem 0rem;
+    border-radius: 10px;
+    border: solid rgb(236, 224, 224) 1px;
+    font-family: 'Source Sans Pro';
+}
+
+.form-input-name {
+    padding: 0.6rem 3rem 0.6rem 0.3rem;
+}
+
+.form-input-project {
+    padding: 0.6rem 3rem 0.6rem 0.3rem;
+}
+
+.form-input-button {
+    border: none;
+    width: 20%;
+    margin-top: 0.2rem;
+    cursor: pointer;
+}
+
+.form-input-message {
+    padding: 0.5rem;
+}
+
+
+/* Contact Form ends here */
+
+/* MAIN SECTION STYLES ENDS HERE */
 
 
 /* FOOTER SECTION STYLE STARTS HERE */
@@ -685,7 +737,6 @@ hr {
         transform: translateY(0);
     }
 }
-
 
 
 
