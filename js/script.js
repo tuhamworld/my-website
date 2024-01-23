@@ -26,8 +26,7 @@ function showTime() {
     am = "pm";
     timeOfDay = "night";
   }
-  // paraDate.textContent = 'Good ' + timeOfDay + ` Today's date is: ${todayDate} | Time: ${hour}:${minutes}:${seconds}${am}
-  //  `
+
   paraDate.innerHTML = `Good ${timeOfDay}<br><br><strong>Today's date</strong> is: ${todayDate} | <strong>Time</strong>: ${finalHour}:${minutes}:${seconds}${am}`;
 }
 
